@@ -13,6 +13,10 @@ def obtener_eventos_eeuu():
     try:
         url = f'https://api.tradingeconomics.com/calendar/country/united states?c={TE_API_KEY}'
         res = requests.get(url)
+        
+        print(f"STATUS: {res.status_code}")
+        print(f"RESPUESTA: {res.text}")
+
         data = res.json()
 
         eventos = []
