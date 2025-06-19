@@ -58,4 +58,4 @@ import time
 if __name__ == "__main__":
     while True:
         asyncio.run(main())
-        time.sleep(86400)  # Espera 1 día
+        time.sleep(30)  # Espera 1 día
