@@ -4,7 +4,7 @@ from telegram import Bot
 
 # --- CONFIGURACIÓN ---
 TE_API_KEY = '7870331565:AAGd5WoqeCWMWavfRmTavvy6TxFzKbwoCVM'      # ← tu API key de TradingEconomics
-TOKEN = 6282948925          # ← tu token de Telegram Bot
+TOKEN = '6282948925'          # ← tu token de Telegram Bot
 USER_ID = '8ac255235f95443:rmci81jlbupx65h'            # ← tu chat_id de Telegram
 
 # --- Obtener eventos desde TradingEconomics API ---
