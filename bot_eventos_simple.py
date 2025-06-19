@@ -11,7 +11,7 @@ USER_ID = '6282948925'            # ← tu chat_id de Telegram
 # --- Obtener eventos desde TradingEconomics API ---
 def obtener_eventos_eeuu():
     try:
-        url = f'https://api.tradingeconomics.com/calendar/country/united states?c={TE_API_KEY}'
+        url = f'https://api.tradingeconomics.com/calendar/country/united states?c={8ac255235f95443:rmci81jlbupx65h}'
         res = requests.get(url)
         
         print(f"STATUS: {res.status_code}")
