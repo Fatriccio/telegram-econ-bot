@@ -1,3 +1,8 @@
+import asyncio
+import requests
+import time
+from telegram import Bot
+
 # --- CONFIGURACIÓN ---
 TE_API_KEY = '8ac255235f95443:rmci81jlbupx65h'      # ← tu API key de TradingEconomics
 TOKEN = '7870331565:AAGd5WoqeCWMWavfRmTavvy6TxFzKbwoCVM'          # ← tu token de Telegram Bot
