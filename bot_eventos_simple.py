@@ -1,11 +1,7 @@
-import asyncio
-import requests
-from telegram import Bot
-
 # --- CONFIGURACIÓN ---
-TE_API_KEY = '7870331565:AAGd5WoqeCWMWavfRmTavvy6TxFzKbwoCVM'      # ← tu API key de TradingEconomics
-TOKEN = '6282948925'          # ← tu token de Telegram Bot
-USER_ID = '8ac255235f95443:rmci81jlbupx65h'            # ← tu chat_id de Telegram
+TE_API_KEY = '8ac255235f95443:rmci81jlbupx65h'      # ← tu API key de TradingEconomics
+TOKEN = '7870331565:AAGd5WoqeCWMWavfRmTavvy6TxFzKbwoCVM'          # ← tu token de Telegram Bot
+USER_ID = '6282948925'            # ← tu chat_id de Telegram
 
 # --- Obtener eventos desde TradingEconomics API ---
 def obtener_eventos_eeuu():
@@ -52,10 +48,12 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 
+
 import time
-...
 
 if __name__ == "__main__":
     while True:
+        print("⏳ Enviando resumen económico diario a Telegram...")
         asyncio.run(main())
-        time.sleep(30)  # Espera 1 día
+        print("✅ Mensaje enviado. Esperando 24 horas...")
+        time.sleep(86400)  # Espera 24 horas (86400 segundos)
